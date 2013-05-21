@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="Demo"  default="dist" basedir="." xmlns:ivy="antlib:org.apache.ivy.ant">
+    <description>
+        simple example build file
+    </description>
+  <!-- set global properties for this build -->
+  <property name="src" value="src"/>
+  <property name="build" value="build/classes"/>
+  <property name="dist"  location="dist"/>
+  <property name="doc" value="doc" />
+  <property name="zip" value="build/zip"/>
+  <property name="repository" value="repository"/>	
+  <property name="ivy.jar.file" value="${dist}/ivy.jar" /> 	
+	
+	
+  
+  <target name="init">
+    <!-- Create the time stamp -->
+    <tstamp/>
+    <!-- Create the build directory structure used by compile -->
+    <mkdir dir="${build}"/>
+  </target>
+    	<target name="resolve" description="--> resolve and retrieve dependencies with ivy">  
+    	        <ivy:resolve file="ivy.xml"/>  	        
+   </target>
+    			
+  <target name="compile" depends="init"
+        description="compile the source " >
+    <!-- Compile the java code from ${src} into ${build} -->
+    <javac srcdir="${src}" destdir="${build}"/>
+  </target>
+
+  <target name="dist" depends="compile"
+        description="generate the distribution" >
+    <!-- Create the distribution directory -->
+    <mkdir dir="${dist}/lib"/>
+
+    <!-- Put everything in ${build} into the MyProject-${DSTAMP}.jar file -->
+    <jar jarfile="${dist}/lib/Demo-${DSTAMP}.jar" basedir="${build}"/>
+  	<!--<javadoc packagenames="com.*" sourcepath="src" destdir="${doc}"/>	 -->
+  	
+  </target>
+
+  <target name="clean"
+        description="clean up" >
+    <!-- Delete the ${build} and ${dist} directory trees -->
+    <delete dir="${build}"/>
+    <delete dir="${dist}"/>
+  </target>
+</project>

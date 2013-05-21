@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="E:/JNI/1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="Test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/log4j"/>
+	<classpathentry kind="lib" path="E:/Java Web/Tool/mysql-connector-java-5.1.24/mysql-connector-java-5.1.24-bin.jar"/>
+	<classpathentry kind="lib" path="E:/Java Web/Tool/cglib-nodep-2.2.2.jar" sourcepath="E:/Java Web/Tool/cglib-src-2.2.jar"/>
+	<classpathentry kind="lib" path="D:/tomcat/lib/ojdbc6_g.jar"/>
+	<classpathentry kind="lib" path="E:/Java Web/Tool/jpcap-0.6/lib/jpcap.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
