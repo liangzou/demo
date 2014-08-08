@@ -21,7 +21,6 @@ public class a {
         // r.r
          while((t=r.read())!=-1){
         	 bw.write( t);
-        	// System.out.println(r.read());
          }
      //   r.r
         
