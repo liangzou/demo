@@ -22,6 +22,7 @@ public class BitDemo {
 		System.out.println(bg.scale());
 		//ConcurrentHashMap
 		//CopyOnWriteArrayList
+		
 		System.out.println(t1.longValue());
 		
 	}
