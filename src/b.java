@@ -18,7 +18,7 @@ public class b extends a {
     // int a=-1024;
 		b b1=new b();
 		a a1=new a();
-		
+		//Test
 		//a.run();
 		a o=a1.getClass().cast(b1);//将a强制转型到b
 		System.out.println(o.getClass().getName());
