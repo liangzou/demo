@@ -26,8 +26,7 @@ public class b extends a {
 		double a= Math.pow(2, 31);
 		System.out.println(a);
 		int ts=2147483647;
-     //int b=a>>>1;
-    // System.out.println(b);
+        //int b=a>>>1;
      //System.out.println(t);
      
 	}
