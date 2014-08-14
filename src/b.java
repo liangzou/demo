@@ -23,6 +23,7 @@ public class b extends a {
 		a o=a1.getClass().cast(b1);//将a强制转型到b
 		System.out.println(o.getClass().getName());
 		o.run();
+		//Test
 		double a= Math.pow(2, 31);
 		System.out.println(a);
 		int ts=2147483647;
