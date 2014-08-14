@@ -15,7 +15,9 @@ public class b extends a {
 		Timestamp t=new Timestamp(date.getTime());*/
 		
 		
-    // int a=-10241;
+
+    // int a=-102400;
+
 		b b1=new b();
 		a a1=new a();
 		//Test
